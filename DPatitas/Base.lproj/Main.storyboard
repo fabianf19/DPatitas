@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sFz-H8-zHT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SQK-AE-cer">
+            <objects>
+                <navigationController id="sFz-H8-zHT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qro-8B-GrC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ap0-8M-VKJ" kind="relationship" relationship="rootViewController" id="JUD-ta-Ylf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsh-qM-5tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-553" y="-117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nLq-TO-zAU">
+            <objects>
+                <viewController id="ap0-8M-VKJ" customClass="ViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8RA-ah-B1E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoc-oK-sBq">
+                                <rect key="frame" x="0.0" y="266" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.61699810420000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98419275971272835" green="0.97468093162419989" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Paseador"/>
+                                <connections>
+                                    <segue destination="tlI-sh-Sne" kind="show" id="Dre-xT-Xso"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azk-zv-Qve">
+                                <rect key="frame" x="0.0" y="350" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1143326182" green="0.3733182921" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98985283015127623" green="1" blue="0.99516141343865649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Usuario"/>
+                                <connections>
+                                    <segue destination="Au0-0a-0TQ" kind="show" id="QcI-AL-X7v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ppM-9o-hJ7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PaX-6P-hae"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="StG-wf-p9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-117.39130434782609"/>
+        </scene>
+        <!--Dogs Table View Controller-->
+        <scene sceneID="RpF-jm-4UH">
+            <objects>
+                <tableViewController id="Au0-0a-0TQ" customClass="DogsTableViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k70-JA-9N4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="eIU-fY-17m">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-Qe-qQG">
+                                    <rect key="frame" x="136" y="20" width="103" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Registrar Perro"/>
+                                    <connections>
+                                        <segue destination="l2c-U0-6Re" kind="show" identifier="registrar_perro" id="brS-PI-HnR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="BHk-de-hOX" customClass="DogTableViewCell" customModule="DPatitas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BHk-de-hOX" id="QOk-zZ-6Zk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Perro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga4-Rp-RVh">
+                                            <rect key="frame" x="16" y="12" width="108" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lbl_dog_name" destination="ga4-Rp-RVh" id="HLd-Rd-AXw"/>
+                                    <segue destination="mBm-Wx-5rg" kind="show" id="k8n-pS-NFf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Au0-0a-0TQ" id="DUp-zY-FhN"/>
+                            <outlet property="delegate" destination="Au0-0a-0TQ" id="xLe-xr-sok"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc0-QX-DXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="311"/>
+        </scene>
+        <!--Paseos Disponibles-->
+        <scene sceneID="gdc-7R-54a">
+            <objects>
+                <tableViewController title="Paseos Disponibles" id="tlI-sh-Sne" customClass="WalksTableViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uGP-9a-nOD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="walk_cell" id="19R-YE-DXS">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="19R-YE-DXS" id="3F4-mR-dvq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Toi-hT-1io" kind="show" id="2WM-kJ-DPe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tlI-sh-Sne" id="azT-vv-qBk"/>
+                            <outlet property="delegate" destination="tlI-sh-Sne" id="xqM-ha-yms"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2k-4S-IQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="-724"/>
+        </scene>
+        <!--Aceptar Paseo-->
+        <scene sceneID="8bT-hf-YGE">
+            <objects>
+                <viewController title="Aceptar Paseo" id="Toi-hT-1io" customClass="AcceptWalkViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ef-Mf-Pwb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frD-PY-L17">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.50893414020000005" green="0.76551094890000004" blue="0.20958267150000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ygl-Iu-bO6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.97514895430000004" blue="0.96441772560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Aceptar Paseo"/>
+                                <connections>
+                                    <action selector="solicitWalk:" destination="Toi-hT-1io" eventType="touchUpInside" id="kth-Vk-KjJ"/>
+                                    <action selector="solicit_walk:" destination="mBm-Wx-5rg" eventType="touchUpInside" id="tNc-a8-FV5"/>
+                                    <segue destination="ym8-6y-0xr" kind="show" identifier="assigned" id="On7-Nx-Bbg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden" translatesAutoresizingMaskIntoConstraints="NO" id="Ccx-6O-m6N">
+                                <rect key="frame" x="112" y="78" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tommy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Hb-FbD">
+                                <rect key="frame" x="112" y="236" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="frD-PY-L17" firstAttribute="leading" secondItem="dZ2-Go-EDw" secondAttribute="leading" id="2pL-7i-EQ0"/>
+                            <constraint firstItem="frD-PY-L17" firstAttribute="trailing" secondItem="dZ2-Go-EDw" secondAttribute="trailing" id="4VZ-2r-0oJ"/>
+                            <constraint firstItem="frD-PY-L17" firstAttribute="bottom" secondItem="dZ2-Go-EDw" secondAttribute="bottom" id="JpJ-be-R9U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dZ2-Go-EDw"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_name" destination="mPI-Hb-FbD" id="DTL-8h-Cxf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlJ-1C-PD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="-725"/>
+        </scene>
+        <!--Iniciar Paseo-->
+        <scene sceneID="pju-TB-D5f">
+            <objects>
+                <viewController title="Iniciar Paseo" id="ym8-6y-0xr" customClass="StartWalkViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Cy-Jc-cH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebJ-vC-UXA">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.50893414020000005" green="0.76551094890000004" blue="0.20958267150000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Bi-MN-ld4"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.97514895430000004" blue="0.96441772560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Iniciar Paseo"/>
+                                <connections>
+                                    <action selector="solicit_walk:" destination="mBm-Wx-5rg" eventType="touchUpInside" id="qLo-PA-a1o"/>
+                                    <action selector="startWalk:" destination="ym8-6y-0xr" eventType="touchUpInside" id="in7-Tu-Xo8"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a8I-rN-LyS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="Ecp-8b-mE6"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dirígete a la ubicación en el mapa para recoger al perro e iniciar el servicio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btn-oo-ZTG">
+                                <rect key="frame" x="23" y="352" width="329" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="329" id="rnO-hW-xlJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a8I-rN-LyS" firstAttribute="trailing" secondItem="R26-vL-qkW" secondAttribute="trailing" id="1TW-Dt-HND"/>
+                            <constraint firstItem="Btn-oo-ZTG" firstAttribute="centerX" secondItem="5Cy-Jc-cH9" secondAttribute="centerX" id="2BG-Pb-ktO"/>
+                            <constraint firstItem="ebJ-vC-UXA" firstAttribute="bottom" secondItem="R26-vL-qkW" secondAttribute="bottom" id="DTp-tk-TdF"/>
+                            <constraint firstItem="ebJ-vC-UXA" firstAttribute="trailing" secondItem="R26-vL-qkW" secondAttribute="trailing" id="G57-7S-ReO"/>
+                            <constraint firstItem="ebJ-vC-UXA" firstAttribute="leading" secondItem="R26-vL-qkW" secondAttribute="leading" id="OUq-MW-GO5"/>
+                            <constraint firstItem="a8I-rN-LyS" firstAttribute="leading" secondItem="R26-vL-qkW" secondAttribute="leading" id="boU-jj-BZt"/>
+                            <constraint firstItem="Btn-oo-ZTG" firstAttribute="top" secondItem="a8I-rN-LyS" secondAttribute="bottom" constant="17" id="vBA-7J-SXx"/>
+                            <constraint firstItem="a8I-rN-LyS" firstAttribute="top" secondItem="R26-vL-qkW" secondAttribute="top" id="zew-61-eYu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R26-vL-qkW"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="a8I-rN-LyS" id="Pdl-9M-EdL"/>
+                        <segue destination="B7Z-VE-vO3" kind="show" identifier="finalizar" id="KSD-1M-aHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxi-O6-tnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3053.5999999999999" y="-725.48725637181417"/>
+        </scene>
+        <!--Finalizar Paseo-->
+        <scene sceneID="Aks-KG-G2s">
+            <objects>
+                <viewController title="Finalizar Paseo" id="B7Z-VE-vO3" customClass="EndWalkViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHR-IH-Ti2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLm-zb-xlk">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.24124930920000001" blue="0.31635603750000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4c7-gW-GqX"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.97514895430000004" blue="0.96441772560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Finalizar Paseo"/>
+                                <connections>
+                                    <action selector="endWalk:" destination="B7Z-VE-vO3" eventType="touchUpInside" id="lgH-w5-mM8"/>
+                                    <action selector="solicit_walk:" destination="mBm-Wx-5rg" eventType="touchUpInside" id="e8x-m4-beH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has tu recorrido y finaliza el viaje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpH-8d-hy5">
+                                <rect key="frame" x="61" y="79" width="252" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cLm-zb-xlk" firstAttribute="bottom" secondItem="ux1-wY-FHi" secondAttribute="bottom" id="3sb-7e-Eqm"/>
+                            <constraint firstItem="cLm-zb-xlk" firstAttribute="trailing" secondItem="ux1-wY-FHi" secondAttribute="trailing" id="HfP-ue-1se"/>
+                            <constraint firstItem="cLm-zb-xlk" firstAttribute="leading" secondItem="ux1-wY-FHi" secondAttribute="leading" id="mPq-xL-NLB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ux1-wY-FHi"/>
+                    </view>
+                    <connections>
+                        <segue destination="SyE-zF-d1P" kind="unwind" identifier="towalks" unwindAction="unwindToWalksWithSegue:" id="9la-yB-5uY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9An-cr-zpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SyE-zF-d1P" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4006" y="-725"/>
+        </scene>
+        <!--Registrar Perro-->
+        <scene sceneID="gcj-sU-hpt">
+            <objects>
+                <viewController title="Registrar Perro" id="l2c-U0-6Re" customClass="RegisterDogViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S1h-xp-lgF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Raza" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwc-ZZ-etD">
+                                <rect key="frame" x="16" y="156" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n3i-bA-ohd">
+                                <rect key="frame" x="16" y="118" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-fj-M6E">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-ly-RfY">
+                                <rect key="frame" x="16" y="194" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.50893414020000005" green="0.76551094890000004" blue="0.20958267150000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.97482346780939344" blue="0.95325004498259414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Registrar Perro"/>
+                                <connections>
+                                    <action selector="register_dog:" destination="l2c-U0-6Re" eventType="touchUpInside" id="r0y-Pf-Kwz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n3i-bA-ohd" firstAttribute="leading" secondItem="PbQ-PN-6nQ" secondAttribute="leading" constant="16" id="4jo-Go-a0S"/>
+                            <constraint firstItem="Znm-fj-M6E" firstAttribute="top" secondItem="PbQ-PN-6nQ" secondAttribute="top" constant="16" id="7sg-ho-2am"/>
+                            <constraint firstItem="hwc-ZZ-etD" firstAttribute="leading" secondItem="PbQ-PN-6nQ" secondAttribute="leading" constant="16" id="7us-Rx-aWj"/>
+                            <constraint firstItem="PbQ-PN-6nQ" firstAttribute="trailing" secondItem="ALY-ly-RfY" secondAttribute="trailing" constant="16" id="G4u-6a-yQr"/>
+                            <constraint firstItem="PbQ-PN-6nQ" firstAttribute="trailing" secondItem="hwc-ZZ-etD" secondAttribute="trailing" constant="16" id="HhO-p0-R4F"/>
+                            <constraint firstItem="n3i-bA-ohd" firstAttribute="top" secondItem="Znm-fj-M6E" secondAttribute="bottom" constant="8" id="J5j-YP-JwY"/>
+                            <constraint firstItem="Znm-fj-M6E" firstAttribute="leading" secondItem="PbQ-PN-6nQ" secondAttribute="leading" constant="16" id="JGA-Ck-UIv"/>
+                            <constraint firstItem="ALY-ly-RfY" firstAttribute="top" secondItem="hwc-ZZ-etD" secondAttribute="bottom" constant="8" id="RAa-F4-mpN"/>
+                            <constraint firstItem="PbQ-PN-6nQ" firstAttribute="trailing" secondItem="n3i-bA-ohd" secondAttribute="trailing" constant="16" id="ZBq-MH-oZS"/>
+                            <constraint firstItem="ALY-ly-RfY" firstAttribute="leading" secondItem="PbQ-PN-6nQ" secondAttribute="leading" constant="16" id="fjf-lk-DhS"/>
+                            <constraint firstItem="PbQ-PN-6nQ" firstAttribute="trailing" secondItem="Znm-fj-M6E" secondAttribute="trailing" constant="16" id="mxc-MZ-u25"/>
+                            <constraint firstItem="hwc-ZZ-etD" firstAttribute="top" secondItem="n3i-bA-ohd" secondAttribute="bottom" constant="8" id="ufR-EK-Fk3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PbQ-PN-6nQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="txt_edad" destination="n3i-bA-ohd" id="nC5-PS-epU"/>
+                        <outlet property="txt_name" destination="Znm-fj-M6E" id="maF-7H-HQC"/>
+                        <outlet property="txt_raza" destination="hwc-ZZ-etD" id="f8Q-su-ZEE"/>
+                        <segue destination="2Rh-zI-9dx" kind="unwind" identifier="back" unwindAction="unwindToDogsWithSegue:" id="ybh-cc-2Rj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eae-N4-fOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2Rh-zI-9dx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="107.49625187406298"/>
+        </scene>
+        <!--Solicitar Paseo-->
+        <scene sceneID="XzB-tP-1ut">
+            <objects>
+                <viewController title="Solicitar Paseo" id="mBm-Wx-5rg" customClass="SolicitWalkViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQd-1N-Fx7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLO-vq-e0r">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.50893414020000005" green="0.76551094890000004" blue="0.20958267150000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1GY-67-duI"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.97514895433079263" blue="0.9644177256293085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Solicitar Paseo"/>
+                                <connections>
+                                    <action selector="solicit_walk:" destination="mBm-Wx-5rg" eventType="touchUpInside" id="nV8-Yx-c01"/>
+                                    <segue destination="Lo9-29-5xJ" kind="show" identifier="waiting" id="xGN-Vv-595"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden" translatesAutoresizingMaskIntoConstraints="NO" id="Psg-H3-IUG">
+                                <rect key="frame" x="16" y="83" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tommy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-p3-vWQ">
+                                <rect key="frame" x="16" y="241" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BLO-vq-e0r" firstAttribute="bottom" secondItem="nTp-qt-ZnB" secondAttribute="bottom" id="1GL-en-DPR"/>
+                            <constraint firstItem="BLO-vq-e0r" firstAttribute="leading" secondItem="nTp-qt-ZnB" secondAttribute="leading" id="Bp8-8X-xIb"/>
+                            <constraint firstItem="BLO-vq-e0r" firstAttribute="trailing" secondItem="nTp-qt-ZnB" secondAttribute="trailing" id="Zse-Ol-dsM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nTp-qt-ZnB"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_name" destination="nOz-p3-vWQ" id="bXp-96-yAA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qg-00-XS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="820.83958020989508"/>
+        </scene>
+        <!--Estado Paseo-->
+        <scene sceneID="Mej-1n-GYZ">
+            <objects>
+                <viewController title="Estado Paseo" id="Lo9-29-5xJ" customClass="WaitingViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gmg-vV-1Dl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden" translatesAutoresizingMaskIntoConstraints="NO" id="9RW-3w-jtV">
+                                <rect key="frame" x="112" y="80" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tommy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-If-7NC">
+                                <rect key="frame" x="112" y="238" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buscando Paseador..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byZ-0i-RZw">
+                                <rect key="frame" x="47" y="323" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Eh-Br-225"/>
+                    </view>
+                    <connections>
+                        <segue destination="oeP-BY-dCw" kind="show" identifier="tomap" id="wwN-S2-Vvc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3n-PL-Jcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3053.5999999999999" y="820.83958020989508"/>
+        </scene>
+        <!--User Map View Controller-->
+        <scene sceneID="wFO-Wz-Glj">
+            <objects>
+                <viewController storyboardIdentifier="map_view" id="oeP-BY-dCw" customClass="UserMapViewController" customModule="DPatitas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="shs-rB-01W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-Ha-IRF">
+                                <rect key="frame" x="0.0" y="65" width="375" height="368"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5iN-7S-fkX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3o-Qh-OGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3967.1999999999998" y="820.83958020989508"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="golden" width="576" height="576"/>
+    </resources>
+</document>
