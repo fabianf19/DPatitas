@@ -50,11 +50,11 @@ class WalksTableViewController: UITableViewController, RequestManagerDelegate {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "walk_cell", for: indexPath)
+        let cell : DogTableViewCell = tableView.dequeueReusableCell(withIdentifier: "walk_cell", for: indexPath) as! DogTableViewCell
 
         // Configure the cell...
         let walk = self.walks[indexPath.row]
-        cell.textLabel?.text = walk!["dog"]["name"].string
+        cell.lbl_dog_name?.text = walk!["dog"]["nombre"].string
 
         return cell
     }

@@ -12,8 +12,9 @@ import CoreLocation
 import SwiftyJSON
 import GoogleMaps
 
-class UserMapViewController: UIViewController, RequestManagerDelegate {
+class UserMapViewController: UIViewController, CLLocationManagerDelegate, RequestManagerDelegate {
 
+    var locationManager : CLLocationManager!
     var points : [JSON?] = []
     
     var request_manager : RequestManager!
@@ -40,8 +41,30 @@ class UserMapViewController: UIViewController, RequestManagerDelegate {
 //
 //        let rectangle = GMSPolyline(path: path)
 //        rectangle.map = self.mapView
+        
+        self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
 
         // Do any additional setup after loading the view.
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+//        let cameraPosition : GMSCameraPosition = GMSCameraPosition(cameraWithLatitude:locValue.latitude, longitude:locValue.longitude, zoom:11.0);
+        let camera = GMSCameraPosition.camera(withLatitude: locValue.latitude, longitude: locValue.longitude, zoom: 15.0)
+
+        self.mapView.animate(to: camera)
+//        [self.mapView.animateToCameraPosition:cameraPosition];
+        
+        self.locationManager.stopUpdatingLocation()
     }
     
     func draw_line(){

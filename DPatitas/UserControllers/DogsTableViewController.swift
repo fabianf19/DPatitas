@@ -12,7 +12,8 @@ import SwiftyJSON
 class DogsTableViewController: UITableViewController, VCFinalDelegate {
     
     var dogs : [JSON?] = []
-
+    var connector = Connector()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,30 @@ class DogsTableViewController: UITableViewController, VCFinalDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        self.loadDogs()
+    }
+    
+    func loadDogs(){
+        let usuario_string = UserDefaults.standard.string(forKey: "USUARIO")
+        if let data = usuario_string!.data(using: .utf8) {
+            if let usuario = try? JSON(data: data) {
+                connector.doGet(url: "/user/\(usuario["id"].stringValue)/dogs") { (response : JSON) in
+                    let dogs = response["Dogs"].arrayValue
+                    
+                    self.dogs = []
+                    
+                    for dog : JSON in dogs{
+                        self.dogs.append(dog)
+                    }
+                    
+                    self.tableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadDogs()
     }
     
     func finishPassing(dog: JSON) {
@@ -49,10 +74,15 @@ class DogsTableViewController: UITableViewController, VCFinalDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DogTableViewCell
 
         let dog = self.dogs[indexPath.row]
-        cell.lbl_dog_name.text = dog!["data"]["name"].string
+//        cell.lbl_dog_name.text = dog!["data"]["name"].string
+        cell.lbl_dog_name.text = dog!["nombre"].string
         // Configure the cell...
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 78.0
     }
     
     @IBAction func unwindToDogs(segue:UIStoryboardSegue) { }

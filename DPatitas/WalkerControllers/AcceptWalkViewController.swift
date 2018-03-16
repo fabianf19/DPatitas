@@ -24,7 +24,7 @@ class AcceptWalkViewController: UIViewController, RequestManagerDelegate {
         request_manager = RequestManager(session : "1010211109")
         request_manager.delegate = self
 
-        self.lbl_name.text = walk["dog"]["name"].string
+        self.lbl_name.text = walk["dog"]["nombre"].string
         // Do any additional setup after loading the view.
     }
     
@@ -41,9 +41,17 @@ class AcceptWalkViewController: UIViewController, RequestManagerDelegate {
     }
     
     @IBAction func solicitWalk(_ sender: Any) {
+        var session = ""
+        let usuario_string = UserDefaults.standard.string(forKey: "USUARIO")
+        if let data = usuario_string!.data(using: .utf8) {
+            if let usuario = try? JSON(data: data) {
+                session = usuario["cedula"].stringValue
+            }
+        }
+        
         let data : JSON = [
             "action" : "assign_walk",
-            "who" : self.request_manager.session,
+            "who" : session,
             "data" : [
                 "walk_id" : self.walk["walk_id"].string!,
                 "user_id" : self.walk["user_id"].string!,

@@ -7,4 +7,6 @@ target 'DPatitas' do
 	pod 'SwiftWebSocket'
 	pod 'SwiftyJSON'
 	pod 'GoogleMaps'
+	pod 'IQKeyboardManagerSwift'
+	pod 'Alamofire', '~> 4.7'
 end

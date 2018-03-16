@@ -30,7 +30,7 @@ class SolicitWalkViewController: UIViewController, CLLocationManagerDelegate, Re
         request_manager = RequestManager(session : "1020794398")
         request_manager.delegate = self
         
-        lbl_name.text = dog["data"]["name"].string
+        lbl_name.text = dog["nombre"].string
         
         self.locationManager = CLLocationManager()
         self.locationManager.requestWhenInUseAuthorization()
@@ -71,11 +71,19 @@ class SolicitWalkViewController: UIViewController, CLLocationManagerDelegate, Re
             return
         }
         
+        var session = ""
+        let usuario_string = UserDefaults.standard.string(forKey: "USUARIO")
+        if let data = usuario_string!.data(using: .utf8) {
+            if let usuario = try? JSON(data: data) {
+                session = usuario["cedula"].stringValue
+            }
+        }
+        
         let data : JSON = [
-            "who" : "1020794398",
+            "who" : session,
             "action" : "solicit_walk",
             "data" : [
-                "dog_id" : self.dog["dog"]["dog"]["id"].string!,
+                "dog_id" : self.dog["id"].stringValue,
                 "location" : [
                     "lat" : self.location.latitude.description,
                     "lon" : self.location.longitude.description

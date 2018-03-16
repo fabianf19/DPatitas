@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9F2D0E9020295B140099B506 /* WaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D0E8F20295B140099B506 /* WaitingViewController.swift */; };
 		9F2D0E9120295BC80099B506 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2D0E9220295BC80099B506 /* SwiftyJSON.framework */; };
+		9F4D4C3A205A9F96004E8E1D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D4C39205A9F96004E8E1D /* GradientView.swift */; };
+		9F553612205AAFC800310504 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F553613205AAFC800310504 /* IQKeyboardManagerSwift.framework */; };
+		9F553614205AB8CC00310504 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F553615205AB8CC00310504 /* Alamofire.framework */; };
+		9F553617205AD11B00310504 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F553616205AD11A00310504 /* Connector.swift */; };
 		9F746E9220295F0D0089D78D /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F746E9120295F0D0089D78D /* UserMapViewController.swift */; };
 		9F746E94202979850089D78D /* WalksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F746E93202979850089D78D /* WalksTableViewController.swift */; };
 		9F746E96202986B20089D78D /* AcceptWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F746E95202986B20089D78D /* AcceptWalkViewController.swift */; };
@@ -17,6 +21,8 @@
 		9FACE8AF20294934006CD5E3 /* SolicitWalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FACE8AE20294934006CD5E3 /* SolicitWalkViewController.swift */; };
 		9FC847DD202989EF001DE337 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC847DC202989EF001DE337 /* MapKit.framework */; };
 		9FC847DF202989F7001DE337 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC847DE202989F7001DE337 /* CoreLocation.framework */; };
+		9FCCFCDC20589A260069FE70 /* RegistroTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCFCDB20589A260069FE70 /* RegistroTableViewController.swift */; };
+		9FCCFCDE2058A2280069FE70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCFCDD2058A2280069FE70 /* LoginViewController.swift */; };
 		9FD8E33F202925B60099FBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8E33E202925B60099FBC3 /* AppDelegate.swift */; };
 		9FD8E341202925B60099FBC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD8E340202925B60099FBC3 /* ViewController.swift */; };
 		9FD8E344202925B60099FBC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD8E342202925B60099FBC3 /* Main.storyboard */; };
@@ -54,6 +60,10 @@
 		715CA0E517ACBBE495AA1A01 /* Pods-DPatitas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPatitas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DPatitas/Pods-DPatitas.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2D0E8F20295B140099B506 /* WaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewController.swift; sourceTree = "<group>"; };
 		9F2D0E9220295BC80099B506 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4D4C39205A9F96004E8E1D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9F553613205AAFC800310504 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F553615205AB8CC00310504 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F553616205AD11A00310504 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		9F746E9120295F0D0089D78D /* UserMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
 		9F746E93202979850089D78D /* WalksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalksTableViewController.swift; sourceTree = "<group>"; };
 		9F746E95202986B20089D78D /* AcceptWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptWalkViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +72,8 @@
 		9FACE8AE20294934006CD5E3 /* SolicitWalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolicitWalkViewController.swift; sourceTree = "<group>"; };
 		9FC847DC202989EF001DE337 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9FC847DE202989F7001DE337 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9FCCFCDB20589A260069FE70 /* RegistroTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTableViewController.swift; sourceTree = "<group>"; };
+		9FCCFCDD2058A2280069FE70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FD8E33B202925B50099FBC3 /* DPatitas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPatitas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD8E33E202925B60099FBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD8E340202925B60099FBC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F553614205AB8CC00310504 /* Alamofire.framework in Frameworks */,
+				9F553612205AAFC800310504 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				9FC847DF202989F7001DE337 /* CoreLocation.framework in Frameworks */,
 				9FC847DD202989EF001DE337 /* MapKit.framework in Frameworks */,
 				9F2D0E9120295BC80099B506 /* SwiftyJSON.framework in Frameworks */,
@@ -116,6 +130,8 @@
 		45794116B7630193F6EA7347 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F553615205AB8CC00310504 /* Alamofire.framework */,
+				9F553613205AAFC800310504 /* IQKeyboardManagerSwift.framework */,
 				9FC847DE202989F7001DE337 /* CoreLocation.framework */,
 				9FC847DC202989EF001DE337 /* MapKit.framework */,
 				9F2D0E9220295BC80099B506 /* SwiftyJSON.framework */,
@@ -132,6 +148,23 @@
 				0856226556406AB44E8C0FE3 /* Pods-DPatitas.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F4D4C36205A9F09004E8E1D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F4D4C39205A9F96004E8E1D /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FCCFCDA205899E10069FE70 /* loginControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCFCDB20589A260069FE70 /* RegistroTableViewController.swift */,
+				9FCCFCDD2058A2280069FE70 /* LoginViewController.swift */,
+			);
+			path = loginControllers;
 			sourceTree = "<group>";
 		};
 		9FD8E332202925B50099FBC3 = {
@@ -159,6 +192,8 @@
 		9FD8E33D202925B50099FBC3 /* DPatitas */ = {
 			isa = PBXGroup;
 			children = (
+				9F4D4C36205A9F09004E8E1D /* Views */,
+				9FCCFCDA205899E10069FE70 /* loginControllers */,
 				9FDF576E2029317A004B2AC6 /* UiCells */,
 				9FD8E36D20292C010099FBC3 /* WalkerControllers */,
 				9FD8E36C20292BF60099FBC3 /* UserControllers */,
@@ -169,6 +204,7 @@
 				9FD8E347202925B60099FBC3 /* LaunchScreen.storyboard */,
 				9FD8E34A202925B60099FBC3 /* Info.plist */,
 				9FD8E36E20292CC90099FBC3 /* RequestManager.swift */,
+				9F553616205AD11A00310504 /* Connector.swift */,
 			);
 			path = DPatitas;
 			sourceTree = "<group>";
@@ -380,11 +416,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DPatitas/Pods-DPatitas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftWebSocket/SwiftWebSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -421,15 +461,19 @@
 				9F2D0E9020295B140099B506 /* WaitingViewController.swift in Sources */,
 				9FD8E37120292D260099FBC3 /* RegisterDogViewController.swift in Sources */,
 				9F8236AE2029C2B00087A1EA /* EndWalkViewController.swift in Sources */,
+				9FCCFCDE2058A2280069FE70 /* LoginViewController.swift in Sources */,
 				9FD8E36F20292CC90099FBC3 /* RequestManager.swift in Sources */,
 				9F746E9220295F0D0089D78D /* UserMapViewController.swift in Sources */,
+				9F4D4C3A205A9F96004E8E1D /* GradientView.swift in Sources */,
 				9F8236AC20298CAF0087A1EA /* StartWalkViewController.swift in Sources */,
 				9FDF577220293425004B2AC6 /* DogsTableViewController.swift in Sources */,
 				9FDF5770202933CA004B2AC6 /* DogTableViewCell.swift in Sources */,
 				9F746E94202979850089D78D /* WalksTableViewController.swift in Sources */,
 				9FD8E341202925B60099FBC3 /* ViewController.swift in Sources */,
 				9FACE8AF20294934006CD5E3 /* SolicitWalkViewController.swift in Sources */,
+				9F553617205AD11B00310504 /* Connector.swift in Sources */,
 				9FD8E33F202925B60099FBC3 /* AppDelegate.swift in Sources */,
+				9FCCFCDC20589A260069FE70 /* RegistroTableViewController.swift in Sources */,
 				9F746E96202986B20089D78D /* AcceptWalkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,9 +54,17 @@ class RegisterDogViewController: UIViewController, RequestManagerDelegate {
         let edad = txt_edad.text
         let raza = txt_raza.text
         
+        var session = ""
+        let usuario_string = UserDefaults.standard.string(forKey: "USUARIO")
+        if let data = usuario_string!.data(using: .utf8) {
+            if let usuario = try? JSON(data: data) {
+                session = usuario["cedula"].stringValue
+            }
+        }
+        
         self.dict = [
             "action" : "register_dog",
-            "who" : "1020794398",
+            "who" : session,
             "data" : [
                 "name" : name!,
                 "age" : edad!,
@@ -70,5 +78,6 @@ class RegisterDogViewController: UIViewController, RequestManagerDelegate {
         // Conectar con servidor y registrar el perro
 //        self.ws.send(json_string)
         self.request_manager.send_data(text: json_string!)
+        self.performSegue(withIdentifier: "back", sender: self)
     }
 }
